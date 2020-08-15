@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg2"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_num1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="inputType"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:background="@drawable/btn2_1" />
+
+    <ImageButton
+        android:id="@+id/ib_numback"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num0"
+        app:layout_constraintEnd_toStartOf="@+id/ib_numclear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num0"
+        app:layout_constraintTop_toTopOf="@+id/ib_num0"
+        android:background="@drawable/btn2_back" />
+
+    <ImageButton
+        android:id="@+id/ib_num8"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num7"
+        app:layout_constraintTop_toTopOf="@+id/ib_num7"
+        android:background="@drawable/btn2_8" />
+
+    <ImageButton
+        android:id="@+id/ib_num0"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num9"
+        app:layout_constraintEnd_toStartOf="@+id/ib_numback"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num9"
+        app:layout_constraintTop_toTopOf="@+id/ib_num9"
+        android:background="@drawable/btn2_0" />
+
+    <ImageButton
+        android:id="@+id/ib_num3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num2"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num2"
+        app:layout_constraintTop_toTopOf="@+id/ib_num2"
+        android:background="@drawable/btn2_3" />
+
+    <ImageButton
+        android:id="@+id/ib_numclear"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_numback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_numback"
+        app:layout_constraintTop_toTopOf="@+id/ib_numback"
+        android:background="@drawable/btn2_clear" />
+
+    <ImageButton
+        android:id="@+id/ib_num7"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num6"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num6"
+        app:layout_constraintTop_toTopOf="@+id/ib_num6"
+        android:background="@drawable/btn2_7" />
+
+    <ImageButton
+        android:id="@+id/ib_num6"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num5"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num5"
+        app:layout_constraintTop_toTopOf="@+id/ib_num5"
+        android:background="@drawable/btn2_6" />
+
+    <ImageButton
+        android:id="@+id/ib_num9"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="inputType"
+        app:layout_constraintEnd_toEndOf="@+id/ib_num5"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_num5"
+        android:background="@drawable/btn2_9" />
+
+    <ImageButton
+        android:id="@+id/ib_num5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="inputType"
+        app:layout_constraintEnd_toEndOf="@+id/ib_num1"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_num1"
+        android:background="@drawable/btn2_5" />
+
+    <ImageButton
+        android:id="@+id/ib_num4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num3"
+        app:layout_constraintTop_toTopOf="@+id/ib_num3"
+        android:background="@drawable/btn2_4" />
+
+    <ImageButton
+        android:id="@+id/ib_num2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="inputType"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_num1"
+        app:layout_constraintEnd_toStartOf="@+id/ib_num3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_num1"
+        app:layout_constraintTop_toTopOf="@+id/ib_num1"
+        android:background="@drawable/btn2_2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/game_bg3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/title2_bg" />
+
+    <ImageButton
+        android:id="@+id/ib_replay"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_send"
+        app:layout_constraintEnd_toEndOf="@+id/ib_numclear"
+        app:layout_constraintStart_toStartOf="@+id/ib_numclear"
+        app:layout_constraintTop_toTopOf="@+id/ib_send"
+        android:background="@drawable/btn_replay2" />
+
+    <ImageButton
+        android:id="@+id/ib_send"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ib_numback"
+        app:layout_constraintStart_toStartOf="@+id/ib_num9"
+        app:layout_constraintTop_toBottomOf="@+id/ib_num9"
+        android:background="@drawable/btn_send2" />
+
+    <TextView
+        android:id="@+id/tv_num2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_num1"
+        app:layout_constraintStart_toEndOf="@+id/tv_num1"
+        app:layout_constraintTop_toTopOf="@+id/tv_num1" />
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ib_send"
+        app:layout_constraintTop_toBottomOf="@+id/ib_send" />
+
+    <TextView
+        android:id="@+id/tv_num4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_num3"
+        app:layout_constraintStart_toEndOf="@+id/tv_num3"
+        app:layout_constraintTop_toTopOf="@+id/tv_num3" />
+
+    <TextView
+        android:id="@+id/tv_num3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_num2"
+        app:layout_constraintStart_toEndOf="@+id/tv_num2"
+        app:layout_constraintTop_toTopOf="@+id/tv_num2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="TimeOut / Sec"
+        android:textColor="@color/Red"
+        android:textSize="12sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timersec"
+        app:layout_constraintStart_toStartOf="@+id/tv_timermin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timermin" />
+
+    <TextView
+        android:id="@+id/tv_timersec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="00"
+        android:textColor="@color/Red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text=":"
+        android:textColor="@color/Red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_timermin"
+        app:layout_constraintStart_toEndOf="@+id/tv_timermin"
+        app:layout_constraintTop_toTopOf="@+id/tv_timermin" />
+
+    <TextView
+        android:id="@+id/tv_timermin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:text="00"
+        android:textColor="@color/Red"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_num4"
+        app:layout_constraintTop_toBottomOf="@+id/ib_send" />
+
+    <ImageView
+        android:id="@+id/iv_viewgrade"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
